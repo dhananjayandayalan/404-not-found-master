@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-font: "Inconsolata";
+  --main-font: "Space Mono";
+
+  --font-weight-sm: 400;
+  --font-weight-lg: 700;
+
+  --color-black: #333333;
+  --color-gray: #4f4f4f;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+  padding: 4rem 6rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+
+.header a {
+  font-family: var(--header-font);
+  font-size: 2.4rem;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: var(--font-weight-lg);
+}
+
+/* Section */
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+  margin: 10rem auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.6rem;
+}
+
+.content h1{
+  font-size: 6.4rem;
+}
+
+.content p {
+  font-size: 2.4rem;
+  width: 65%;
+}
+
+.content a {
+  margin-top: 3.6rem;
+  padding: 2.4rem 4.8rem;
+  background: var(--color-black);
+  align-self: flex-start;
+  color: white;
+  text-decoration: none;
+  font-weight: var(--font-weight-lg);
+}
+
+.logo img {
+  height: 50rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 1%;
+  align-self: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+footer p a {
+  color: var(--color-gray);
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: var(--color-black);
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 56.2%;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 31.25%;
+  }
+
+  .content a {
+    font-size: 2.4rem;
+  }
+}
